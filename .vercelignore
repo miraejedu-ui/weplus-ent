@@ -1,0 +1,6 @@
+node_modules
+dist
+shots
+.env*
+data/admin.json
+data/sessions.json

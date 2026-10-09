@@ -2,5 +2,7 @@ node_modules
 dist
 .DS_Store
 shots
+.vercel
+.env*
 data/admin.json
 data/sessions.json

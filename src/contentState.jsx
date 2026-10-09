@@ -14,7 +14,8 @@ export function ContentProvider({ children }) {
 
   const reload = useCallback(async () => {
     const response = await fetch('/api/content')
-    if (!response.ok) return
+    const type = response.headers.get('content-type') || ''
+    if (!response.ok || !type.includes('json')) return
     setContent(await response.json())
   }, [])
 
