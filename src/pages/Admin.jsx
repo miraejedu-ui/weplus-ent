@@ -383,8 +383,8 @@ function ImageField({ label, value, onChange }) {
       setMessage('이미지 파일만 올릴 수 있습니다.')
       return
     }
-    if (file.size > 5 * 1024 * 1024) {
-      setMessage('5MB 이하 사진만 올릴 수 있습니다.')
+    if (file.size > 4 * 1024 * 1024) {
+      setMessage('4MB 이하 사진만 올릴 수 있습니다.')
       return
     }
     setMessage('올리는 중')
