@@ -70,15 +70,7 @@ export default function Admin() {
         <h1>관리</h1>
         <p className="lede">{user}</p>
       </header>
-      <div className="admin-bar">
-        <button className="btn" type="button" onClick={save} disabled={saving}>
-          {saving ? '저장 중' : '저장'}
-        </button>
-        <button className="text-btn" type="button" onClick={logout}>
-          로그아웃
-        </button>
-        {message ? <p className="note">{message}</p> : null}
-      </div>
+      <SaveBar saving={saving} message={message} onSave={save} onLogout={logout} />
       <div className="admin-tabs">
         {tabs.map((item) => (
           <button key={item} type="button" className={item === tab ? 'on' : ''} onClick={() => setTab(item)}>
@@ -102,6 +94,21 @@ export default function Admin() {
       {tab === 'Audition' ? <AuditionFields draft={draft} setDraft={setDraft} /> : null}
       {tab === 'Recruit' ? <JobFields draft={draft} setDraft={setDraft} /> : null}
       {tab === 'Contact' ? <ContactFields draft={draft} setDraft={setDraft} /> : null}
+      <SaveBar saving={saving} message={message} onSave={save} onLogout={logout} end />
+    </div>
+  )
+}
+
+function SaveBar({ saving, message, onSave, onLogout, end = false }) {
+  return (
+    <div className={end ? 'admin-bar admin-bar-end' : 'admin-bar'}>
+      <button className="btn" type="button" onClick={onSave} disabled={saving}>
+        {saving ? '저장 중' : '저장하기'}
+      </button>
+      <button className="text-btn" type="button" onClick={onLogout}>
+        로그아웃
+      </button>
+      {message ? <p className="note">{message}</p> : null}
     </div>
   )
 }
