@@ -1,0 +1,232 @@
+// 화면에 보이는 문구와 목록은 예시입니다. 이 파일을 고치면 사이트에 반영됩니다.
+// 홈 사진: public/images 폴더에 파일을 넣은 뒤 경로를 적습니다.
+// 예) heroImage: '/images/hero.jpg'
+// 예) 아티스트 image: '/images/yoon-harin.jpg'
+
+export const home = {
+  heroImage: '',
+  aboutImage: '',
+}
+
+export const company = {
+  name: 'weplus ent',
+  nameKo: '위플러스엔트',
+  tagline: '함께하면 더 빛나는 우리',
+  summary: '아티스트와 함께 음악, 무대, 콘텐츠를 만듭니다.',
+  about:
+    '위플러스엔트는 소속 아티스트의 음악, 연기, 무대를 함께 기획하고 만듭니다. 한 사람의 빛으로 끝나지 않고, 함께할 때 더 오래 빛난다고 믿습니다.',
+  works: [
+    {
+      title: '매니지먼트',
+      text: '활동 방향, 일정, 계약을 아티스트와 함께 설계합니다.',
+    },
+    {
+      title: '음악·공연',
+      text: '음원과 무대를 제작하고, 관객을 만나는 자리를 만듭니다.',
+    },
+    {
+      title: '콘텐츠',
+      text: '영상과 브랜드 콘텐츠로 아티스트의 세계를 전합니다.',
+    },
+  ],
+  history: [
+    { year: '2024', text: '위플러스엔트를 설립했습니다.' },
+    { year: '2025', text: '소속 아티스트의 첫 활동을 시작했습니다.' },
+    { year: '2026', text: '오디션과 제작, 채용을 함께 운영합니다.' },
+  ],
+  contact: {
+    email: 'hello@weplusent.com',
+    phone: '02-000-0000',
+    address: '서울특별시',
+  },
+}
+
+export const nav = [
+  { to: '/about', label: 'About' },
+  { to: '/artist', label: 'Artist' },
+  { to: '/news', label: 'News' },
+  { to: '/notice', label: 'Notice' },
+  { to: '/audition', label: 'Audition' },
+  { to: '/contact', label: 'Contact' },
+  { to: '/recruit', label: 'Recruit' },
+]
+
+export const artists = [
+  {
+    id: 'yoon-harin',
+    name: '윤하린',
+    role: '보컬',
+    image: '',
+    gradient: 'linear-gradient(165deg, #477BFF 0%, #24345C 100%)',
+    ink: '#FFFFFF',
+    bio: '따뜻하고 선명한 목소리로 일상 속 마음을 노래합니다. 첫 싱글 이후 음악 방송과 소규모 공연을 오가며 자기 색깔을 만들고 있습니다.',
+    activities: ['싱글 ‘우리’ 발매', '음악 방송 출연', '가을 소극장 공연'],
+  },
+  {
+    id: 'lee-doyun',
+    name: '이도윤',
+    role: '배우',
+    image: '',
+    gradient: 'linear-gradient(165deg, #A8C5FF 0%, #477BFF 100%)',
+    ink: '#FFFFFF',
+    bio: '짧은 장면 안에서도 관계의 온도를 보여주는 배우입니다. 드라마와 독립 영화를 넘나들며 다음 역할을 준비하고 있습니다.',
+    activities: ['드라마 단역 출연', '독립 영화 주연', '브랜드 영상 내레이션'],
+  },
+  {
+    id: 'seo-ria',
+    name: '서리아',
+    role: '댄서',
+    image: '',
+    gradient: 'linear-gradient(165deg, #24345C 0%, #477BFF 78%)',
+    ink: '#FFFFFF',
+    bio: '정확함보다 호흡을 먼저 보여주는 댄서입니다. 공연 안무와 아티스트 백업, 워크숍을 통해 무대의 결을 넓히고 있습니다.',
+    activities: ['가을 무대 안무', '아티스트 백업 댄스', '주니어 워크숍'],
+  },
+  {
+    id: 'han-gyeol',
+    name: '한결',
+    role: '프로듀서',
+    image: '',
+    gradient: 'linear-gradient(165deg, #e7efff 0%, #A8C5FF 100%)',
+    ink: '#24345C',
+    bio: '멜로디와 이야기 사이를 잇는 프로듀서입니다. 소속 아티스트의 음원과 라이브 편곡을 함께 만들고 있습니다.',
+    activities: ['신곡 프로듀싱', '라이브 편곡', '작업실 세션'],
+  },
+]
+
+export const news = [
+  {
+    id: 'single-uri',
+    artistId: 'yoon-harin',
+    date: '2026-10-08',
+    title: '윤하린, 첫 싱글 ‘우리’ 발매',
+    summary: '함께 부를 때 더 선명해지는 마음을 담은 첫 싱글이 공개되었습니다.',
+    body: [
+      '윤하린의 첫 싱글 ‘우리’가 주요 음원 사이트에 공개되었습니다. 담담한 시작에서 후렴으로 갈수록 목소리가 모이는 곡입니다.',
+      '발매 주간에는 음악 방송과 짧은 라이브 클립이 이어집니다. 공연 일정은 News와 Notice에서 다시 안내합니다.',
+    ],
+  },
+  {
+    id: 'doyun-drama',
+    artistId: 'lee-doyun',
+    date: '2026-10-02',
+    title: '이도윤, 새 드라마에 출연',
+    summary: '청춘 드라마의 조연으로 합류해 촬영을 시작했습니다.',
+    body: [
+      '이도윤이 새 청춘 드라마의 조연으로 캐스팅되었습니다. 주인공의 오랜 친구로, 말수보다 표정이 먼저 남는 역할입니다.',
+      '방송 시기와 제작 정보는 확정되는 대로 이 자리에서 전하겠습니다.',
+    ],
+  },
+  {
+    id: 'ria-stage',
+    artistId: 'seo-ria',
+    date: '2026-09-18',
+    title: '서리아, 가을 무대 공연',
+    summary: '소극장에서 30분 분량의 단독 무대를 선보입니다.',
+    body: [
+      '서리아가 가을 시즌 소극장 공연에 오릅니다. 기존 안무를 다시 엮어, 한 사람의 하루를 움직임으로 보여 주는 구성입니다.',
+      '관객 수는 적게 유지하고, 예매 안내는 Notice에 올립니다.',
+    ],
+  },
+  {
+    id: 'gyeol-producing',
+    artistId: 'han-gyeol',
+    date: '2026-09-04',
+    title: '한결, 신곡 프로듀싱 참여',
+    summary: '소속 보컬 윤하린의 다음 작업을 함께 준비하고 있습니다.',
+    body: [
+      '한결이 윤하린의 다음 음원 프로듀싱에 참여합니다. 첫 싱글보다 리듬을 앞에 두고, 라이브에서도 그대로 부를 수 있는 편곡을 목표로 합니다.',
+      '공개 시기는 녹음이 끝난 뒤 뉴스에서 안내합니다.',
+    ],
+  },
+]
+
+export const notices = [
+  {
+    id: 'audition-schedule',
+    date: '2026-10-07',
+    title: '2026년 하반기 오디션 일정',
+    summary: '서류 접수와 실기 심사 일정을 안내합니다.',
+    body: [
+      '하반기 오디션 서류는 2026년 11월 1일부터 11월 30일까지 받습니다. 분야는 보컬, 댄스, 랩, 연기입니다.',
+      '실기 심사 장소와 시간은 서류 합격자에게 개별 연락합니다. 지원은 Audition 페이지에서 작성할 수 있습니다.',
+    ],
+  },
+  {
+    id: 'year-end-break',
+    date: '2026-09-28',
+    title: '연말 휴무 안내',
+    summary: '12월 마지막 주는 사무실 운영을 잠시 멈춥니다.',
+    body: [
+      '2026년 12월 28일부터 2027년 1월 1일까지 사무실 휴무입니다. 이 기간의 문의는 메일로 남겨 주시면 영업 시작 후 순서대로 답합니다.',
+      '오디션과 공연 당일 운영은 각 공지에서 따로 안내합니다.',
+    ],
+  },
+  {
+    id: 'privacy',
+    date: '2026-09-12',
+    title: '개인정보 처리 안내',
+    summary: '오디션, 문의, 채용으로 받은 정보의 보관 기간을 안내합니다.',
+    body: [
+      '지원서와 문의에 적힌 이름, 연락처, 이메일은 답변과 전형에만 사용합니다.',
+      '전형이 끝나거나 문의 처리가 끝나면 관련 법령이 정한 기간 안에 삭제합니다. 자세한 문장은 추후 이 공지를 교체해 올립니다.',
+    ],
+  },
+  {
+    id: 'recruit-deadline',
+    date: '2026-08-20',
+    title: '채용 서류 접수 안내',
+    summary: '매니저, 콘텐츠 디자이너 포지션의 접수 마감일을 확인하세요.',
+    body: [
+      '아티스트 매니저와 콘텐츠 디자이너를 찾습니다. 마감일과 하는 일은 Recruit 페이지에 올려 두었습니다.',
+      '서류는 해당 페이지의 지원서로 받으며, 결과도 입력하신 이메일로 안내합니다.',
+    ],
+  },
+]
+
+export const audition = {
+  intro:
+    '위플러스엔트와 함께할 아티스트를 찾습니다. 장르와 경력보다, 무대에서 전하고 싶은 마음을 봅니다.',
+  tracks: ['보컬', '댄스', '랩', '연기'],
+  qualification: [
+    '만 15세 이상',
+    '경력과 소속 유무는 관계없습니다',
+    '서울에서 진행하는 실기 심사에 참석할 수 있어야 합니다',
+  ],
+  schedule: [
+    { label: '서류 접수', value: '2026.11.01 – 2026.11.30' },
+    { label: '실기 심사', value: '2026.12 중 개별 안내' },
+    { label: '결과 발표', value: '심사 후 2주 이내' },
+  ],
+}
+
+export const inquiryTypes = ['비즈니스', '제휴', '미디어', '기타']
+
+export const jobs = [
+  {
+    id: 'manager',
+    title: '아티스트 매니저',
+    team: '매니지먼트',
+    type: '정규직',
+    deadline: '2026-10-31',
+    summary: '소속 아티스트의 일정, 현장, 커뮤니케이션을 담당합니다.',
+  },
+  {
+    id: 'designer',
+    title: '콘텐츠 디자이너',
+    team: '콘텐츠',
+    type: '정규직',
+    deadline: '2026-11-15',
+    summary: '음원, 공연, 채널에 쓰이는 시각 콘텐츠를 만듭니다.',
+  },
+]
+
+export function byDateDesc(items) {
+  return [...items].sort((a, b) => b.date.localeCompare(a.date))
+}
+
+export function formatDate(iso) {
+  if (!iso || !String(iso).includes('-')) return iso || ''
+  const [y, m, d] = iso.split('-')
+  return `${y}.${m}.${d}`
+}
